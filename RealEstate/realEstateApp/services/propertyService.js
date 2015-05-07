@@ -2,11 +2,11 @@
 (function (app) {
 
     var property =
-                  [
+                  [  
                       {
                           Id : 1,
-                          FirstName: "Tony",
-                          LastName: "Jen",
+                          FirstName: "Jose",
+                          LastName: "Vowels",
                           Company: "ACME",
                           JobTitle: "Marine electronics technician",
                           BusinessPhone: "5593346999",
@@ -23,8 +23,8 @@
                       },
                       {
                            Id : 2,
-                           FirstName: "Stephy",
-                           LastName: "Jen",
+                           FirstName: "Andrew",
+                           LastName: "Mowry",
                            Company: "ACME",
                            JobTitle: "Software Developer",
                            BusinessPhone: "3215468458",
@@ -41,8 +41,8 @@
                        },
                         {
                             Id: 3,
-                            FirstName: "Bob",
-                            LastName: "Martin",
+                            FirstName: "Milton",
+                            LastName: "White",
                             Company: "ACME",
                             JobTitle: "Sawing machine tender",
                             BusinessPhone: "3215468458",
