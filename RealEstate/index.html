@@ -10,125 +10,127 @@
         <div class="panel-heading">
             Real Estate App
         </div>
-        <div class="container" ng-controller="propertiesController" ngcloak>          
-           
-                <h1>Real Estate App!</h1>
-                   <div class="row">
-                        <div class="col-md-6" ng-repeat="property in property">
-                            <div class="pull-left">
-                                <button class="btn btn-primary" ng-click="previousProperty()">
-                                    Previous
-                                </button>
-                                <button class="btn btn-primary" ng-click="nextProperty()">
-                                    Next
-                                </button>
-                                <button class="btn btn-success" ng-click="addProperty()">
-                                    Add
-                                </button>
-                                <button class="btn btn-danger" ng-click="deleteProperty()">
-                                    Delete
-                                </button>
-                                <br>
-                                <br>
-                           </div>
-                            <table border="0">
-                                <tr>
-                                    <td width="100">First Name: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.FirstName" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Last Name: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.LastName" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Company: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.Company" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Job Title: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.JobTitle" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Business Phone: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.BusinessPhone" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Home Phone: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.HomePhone" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mobile Phone: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.MobilePhone" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Street: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.Street" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>City: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.City" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>State: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.State" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Country: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.Country" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Email: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.Email" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>WebPage: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.WebPage" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Notes: </td>
-                                    <td>
-                                        <input type="text" ng-model="property.Notes" placeholder="Enter a name here">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        {{property | json}}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <h1>Hello {{property.FirstName}} {{property.LastName}}!</h1>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+        <div class="container" ng-controller="tenantsController" ngcloak>
+            <h1>Tenants</h1>
+            <div class="row">
+                <div class="pull-left">
+                    <button class="btn btn-primary" ng-click="previousTenant()">
+                        Previous
+                    </button>
+                    <button class="btn btn-primary" ng-click="nextTenant()">
+                        Next
+                    </button>
+                    <button class="btn btn-success" ng-click="addTenant()">
+                        Add
+                    </button>
+                    <button class="btn btn-danger" ng-click="deleteTenant()">
+                        Delete
+                    </button>
+                    <br style="clear:both">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" ng-repeat="tenant in tenant">
+
+                    <table border="0" class="pull-left">
+                        <tr>
+                            <td width="100">First Name: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.FirstName" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Last Name: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.LastName" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Company: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.Company" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Job Title: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.JobTitle" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Business Phone: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.BusinessPhone" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Home Phone: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.HomePhone" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Phone: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.MobilePhone" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Street: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.Street" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.City" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.State" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.Country" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.Email" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>WebPage: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.WebPage" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Notes: </td>
+                            <td>
+                                <input type="text" ng-model="tenant.Notes" placeholder="Enter a name here">
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0">
+                        <tr>
+                            <td colspan="2">
+                                {{tenant | json}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1>Hello {{FirstName}} {{astName}}!</h1>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -137,7 +139,7 @@
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="realEstateApp/realestateApp.js"></script>
-    <script src="realEstateApp/controllers/propertiesController.js"></script>
-    <script src="realEstateApp/services/propertyService.js"></script>
+    <script src="realEstateApp/controllers/tenantsController.js"></script>
+    <script src="realEstateApp/services/tenantService.js"></script>
 </body>
 </html>
