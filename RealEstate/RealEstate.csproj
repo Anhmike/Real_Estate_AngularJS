@@ -74,9 +74,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="index.html" />
-    <Content Include="realEstateApp\controllers\propertiesController.js" />
+    <Content Include="realEstateApp\controllers\tenantsController.js" />
     <Content Include="realEstateApp\realestateApp.js" />
-    <Content Include="realEstateApp\services\propertyService.js" />
+    <Content Include="realEstateApp\services\tenantService.js" />
     <Content Include="realEstateApp\site.css" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
